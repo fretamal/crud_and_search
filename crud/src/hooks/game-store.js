@@ -28,13 +28,7 @@ const configureAuthStore = () => {
   initStore(actions, {
     games: [
       {title: 'TLOZ: Ocarina of time', genre:'Aventura'},
-      {title: 'TLOZ: Breath of the wild', genre:'Mundo abierto'},
       {title: 'Pokemon Red', genre:'RPG'},
-      {title: 'Pokemon X', genre:'RPG'},
-      {title: 'Pokemon Shield', genre:'RPG'},
-      {title: 'Pokemon Let\'s Go Pikachu', genre:'RPG'},
-      {title: 'Pokemon Black', genre:'RPG'},
-      {title: 'Super Smash Bros ', genre:'Plataforma'},
     ]
   });
 };
