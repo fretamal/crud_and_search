@@ -8,13 +8,26 @@ const GameCard = (props) => {
     const [title, setTitle] = useState(props.item.title)
     const [genre, setGenre] = useState(props.item.genre)
 
+    
     const handleSave = () => {
         if(title.length > 0 && genre.length > 0){
-            setEdit(false)
-            const datos = [ {prevGame: props.item}, {newGame: {title: title, genre: genre}}]
-            dispatch('EDIT_GAME',datos)
-            setTitle(props.item.title)
-            setGenre(props.item.genre)
+            let existe = state.games.filter(game => game.title.toLowerCase() === title.toLowerCase())
+            if(existe.length === 0){
+                setEdit(false)
+                const datos = [ {prevGame: props.item}, {newGame: {title: title, genre: genre}}]
+                dispatch('EDIT_GAME',datos)
+                
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Ups...',
+                    text: 'El juego que intentas agregar ya existe!',
+                    confirmButtonColor: '#75919E',
+                    confirmButtonText: 'Ok'
+                })
+            }
+
+       
         }
         else{
             Swal.fire({

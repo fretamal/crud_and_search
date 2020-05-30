@@ -10,7 +10,7 @@ const Add = () => {
     const handleAddGame = () => {
         if(titulo.length>0 && genero.length>0){
             const existe = state.games.filter(game => game.title.toLowerCase() === titulo.toLowerCase())
-            if(existe === -1){
+            if(existe.length === 0){
                 const datos = {title: titulo, genre: genero}
                 console.log("DATOS",datos)
                 dispatch('ADD_GAME',datos)
@@ -29,7 +29,7 @@ const Add = () => {
           Swal.fire({
               icon: 'error',
               title: 'Ups...',
-              text: 'Los campos no pueden estar vacios!',
+              text: 'Los campos Título y Género no pueden estar vacios!',
               confirmButtonColor: '#75919E',
               confirmButtonText: 'Ok'
           })
