@@ -5,8 +5,9 @@ Un proyecto de CRUD con búsqueda de elementos, realizado en ReactJs en conjunto
 
 Para instalar este proyecto se deben correr los comandos
 
-`$ npm install`
-`$ yarn start`
+```sh
+ $ npm install
+ $ yarn start
+```
 
-El proyecto correrá en la url @localhost:3000
-
+El proyecto correrá en la url http://localhost:3000
