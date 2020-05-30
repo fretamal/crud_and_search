@@ -1,0 +1,50 @@
+.game-card{
+    @extend .card;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+  
+    &__content{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    &__titles{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    &__title{
+      margin-bottom: 0px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  
+    &__genre{
+      margin-bottom: 0px;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+  
+    &__buttons{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    &__edits{
+    }
+  
+    &__form{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 5px;
+  
+    }
+  }
+  
