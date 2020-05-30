@@ -1,0 +1,5 @@
+.input-form{
+    @extend .form-control;
+    @extend .form-control-sm;
+    max-width: 400px;
+}

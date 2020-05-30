@@ -1,0 +1,26 @@
+.button{
+    @extend .btn;
+    @extend .btn-sm;
+    padding: 3px;
+    margin-right: 5px;
+      &--edit{
+        @extend .btn-info;
+      }
+  
+      &--delete{
+        @extend .btn-danger;
+      }
+  
+      &--cancel{
+        @extend .btn-secondary;
+      }
+  
+      &--save{
+        @extend .btn-success;
+      }
+  
+      &--add{
+        @extend .btn-success;
+        margin-top: 10px;
+      }
+  }
